@@ -1,3 +1,3 @@
 export function Banner() {
-  return <div>Banner</div>;
+  return <div className="h-96 bg-slate-800">Banner</div>;
 }
