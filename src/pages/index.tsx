@@ -11,8 +11,10 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <Header />
-      <Banner />
+      <div className="bg-slate-200 text-gray-800 dark:bg-gray-900 dark:text-gray-50}">
+        <Header />
+        <Banner />
+      </div>
     </>
   );
 }
