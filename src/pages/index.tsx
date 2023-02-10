@@ -1,6 +1,8 @@
 import Head from "next/head";
-import { Banner } from "../components/Banner";
-import { Header } from "../components/Header";
+import { About } from "../views/About";
+import { Banner } from "../views/Banner";
+import { Header } from "../views/Header";
+import { Skills } from "../views/Skills";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <div className="bg-slate-200 text-gray-800 dark:bg-gray-900 dark:text-gray-50}">
         <Header />
         <Banner />
+        <About />
+        <Skills />
       </div>
     </>
   );

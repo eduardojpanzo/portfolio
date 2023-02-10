@@ -1,6 +1,6 @@
-import { Logo } from "../Logo";
-import { Menu } from "../Menu";
-import { Switch } from "../Switch";
+import { Logo } from "../components/Logo";
+import { Menu } from "../components/Menu";
+import { Switch } from "../components/Switch";
 
 export function Header() {
   return (
