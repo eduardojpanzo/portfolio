@@ -1,7 +1,11 @@
 import Head from "next/head";
 import { About } from "../views/About";
 import { Banner } from "../views/Banner";
+import { Contacts } from "../views/Contacts";
+import { Footer } from "../views/Footer";
+import { Formations } from "../views/Formations";
 import { Header } from "../views/Header";
+import { Projects } from "../views/Projects";
 import { Skills } from "../views/Skills";
 
 export default function Home() {
@@ -16,8 +20,14 @@ export default function Home() {
       <div className="bg-slate-200 text-gray-800 dark:bg-gray-900 dark:text-gray-50}">
         <Header />
         <Banner />
-        <About />
-        <Skills />
+        <div className="max-w-5xl mx-auto">
+          <About />
+          <Skills />
+          <Formations />
+          <Projects />
+          <Contacts />
+        </div>
+        <Footer />
       </div>
     </>
   );
