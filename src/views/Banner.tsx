@@ -3,7 +3,7 @@ import Image from "next/image";
 export function Banner() {
   return (
     <div className="h-96 bg-slate-300">
-      <div className="max-w-5xl mx-auto h-full border-red-700 border-x-2 flex items-center justify-around">
+      <div className="max-w-5xl mx-auto h-full flex items-center justify-around">
         <div>
           <span className="text-xl font-medium">Hello! I'm </span>
 
