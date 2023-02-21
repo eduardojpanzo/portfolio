@@ -1,16 +1,24 @@
 export function Skills() {
+  const skillsItems = [
+    { name: "JavaScript" },
+    { name: "HTML" },
+    { name: "CSS" },
+    { name: "ReactJS" },
+    { name: "NodeJS" },
+    { name: "Express" },
+    { name: "NextJs" },
+    { name: "TypeScript" },
+  ];
+
   return (
-    <div className="px-4">
+    <div className="px-4 mb-2">
       <h2 className="uppercase font-bold text-3xl mb-2">Skill </h2>
-      <div className="flex justify-between items-center gap-2 flex-wrap">
-        <div className="h-3 shadow-md">JavaScript</div>
-        <div className="h-3 shadow-md">HTML</div>
-        <div className="h-3 shadow-md">CSS</div>
-        <div className="h-3 shadow-md">ReactJS</div>
-        <div className="h-3 shadow-md">NodeJS</div>
-        <div className="h-3 shadow-md">Express</div>
-        <div className="h-3 shadow-md">NextJs</div>
-        <div className="h-3 shadow-md">TypeScript</div>
+      <div className="grid grid-cols-3 grid-rows-3 gap-4">
+        {skillsItems.map((item) => (
+          <div className="h-14 flex justify-center items-center text-center hover:border cursor-pointer">
+            {item.name}
+          </div>
+        ))}
       </div>
     </div>
   );

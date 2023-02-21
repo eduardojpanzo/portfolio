@@ -3,7 +3,9 @@ import Image from "next/image";
 export function About() {
   return (
     <div className="px-4">
-      <h2 className="uppercase font-bold text-3xl mb-2">About </h2>
+      <h2 className="uppercase font-bold text-3xl mb-2 text-green-800">
+        About
+      </h2>
       <div className="flex justify-between items-center">
         <p>
           Estudante de programação, interesado em aprender sempre. <br />
