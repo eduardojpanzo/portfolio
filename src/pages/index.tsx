@@ -1,12 +1,12 @@
 import Head from "next/head";
-import { About } from "../views/About";
-import { Banner } from "../views/Banner";
-import { Contacts } from "../views/Contacts";
-import { Footer } from "../views/Footer";
-import { Formations } from "../views/Formations";
-import { Header } from "../views/Header";
-import { Projects } from "../views/Projects";
-import { Skills } from "../views/Skills";
+import { About } from "../sections/About";
+import { Banner } from "../sections/Banner";
+import { Contacts } from "../sections/Contacts";
+import { Footer } from "../sections/Footer";
+import { Formations } from "../sections/Formations";
+import { Header } from "../sections/Header";
+import { Projects } from "../sections/Projects";
+import { Skills } from "../sections/Skills";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <div className="bg-slate-200 text-gray-800 dark:bg-gray-900 dark:text-gray-50}">
+      <div>
         <Header />
         <Banner />
         <div className="max-w-5xl mx-auto">

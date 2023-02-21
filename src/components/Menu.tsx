@@ -12,7 +12,7 @@ export function Menu() {
     <div className="flex gap-4">
       {menuLinks.map(({ path, value }) => (
         <Link
-          className="hover:underline hover:decoration-sky-600 hover:text-sky-600 "
+          className="font-semibold text-gray-400 hover:text-gray-500"
           key={path}
           href={path}
         >
