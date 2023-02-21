@@ -2,33 +2,30 @@ import Image from "next/image";
 
 export function Banner() {
   return (
-    <div className="h-96 bg-slate-300">
+    <div className="h-96 shadow-inner">
       <div className="max-w-5xl mx-auto h-full flex items-center justify-around">
         <div>
-          <span className="text-xl font-medium">Hello! I'm </span>
-
-          <h2 className="text-4xl text-sky-600">
-            João <br />
-            Eduardo Panzo
+          <h1 className="text-7xl font-bold text-green-600 dark:text-gray-50">
+            Hi, I'm Dev
+            <br />{" "}
+            <span className="text-gray-900 text-4xl dark:text-green-600">
+              João Eduardo Panzo
+            </span>
+          </h1>
+          <h2 className="leading-9 font-bold text-green-600 dark:text-gray-50">
+            FullStack Devloper
           </h2>
 
-          <h3 className="leading-9">FullStack Devloper</h3>
-
           <div className="flex gap-4 mt-4">
-            <p className="text-green-700 uppercase flex gap-2 items-center">
-              <em className="text-6xl">2</em> years of <br />
+            <p className="uppercase flex gap-2 items-center text-gray-900 dark:text-green-600">
+              <span className="text-6xl font-bold">2</span> years of <br />
               experience
-            </p>
-
-            <p className="text-green-700 uppercase flex gap-2 items-center">
-              <em className="text-6xl">4</em> Projects <br />
-              Completed
             </p>
           </div>
         </div>
 
         <div className="w-52 h-52 rounded-full shadow-lg overflow-hidden">
-          <Image width={200} height={200} src={"/profil.png"} alt="" />
+          <Image width={208} height={208} src={"/profil.png"} alt="" />
         </div>
       </div>
     </div>
