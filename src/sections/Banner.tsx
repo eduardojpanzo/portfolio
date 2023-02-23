@@ -17,7 +17,7 @@ export function Banner() {
           </h2>
 
           <div className="flex gap-4 mt-4">
-            <p className="uppercase flex gap-2 items-center text-gray-900 dark:text-green-600">
+            <p className="uppercase flex gap-2 items-center text-gray-700 dark:text-green-600">
               <span className="text-6xl font-bold">2</span> years of <br />
               experience
             </p>
