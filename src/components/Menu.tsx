@@ -13,7 +13,7 @@ export function Menu() {
       {menuLinks.map(({ path, value }) => (
         <Link
           className="font-semibold text-gray-400 hover:text-gray-500"
-          key={path}
+          key={value}
           href={path}
         >
           {value}
