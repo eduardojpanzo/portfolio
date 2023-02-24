@@ -1,22 +1,12 @@
 import Link from "next/link";
+import { Title } from "../components/Title";
 
 export function Projects() {
   return (
-    <div className="py-3">
-      <div className="w-40 h-40 rounded-lg shadow-lg">
-        <p>Project Name</p>
-        <Link href={"/same place"} />
-      </div>
+    <div className="py-3" style={{ minHeight: "calc(100vh - 65px)" }}>
+      <Title name="Projects" />
 
-      <div className="w-40 h-40 rounded-lg shadow-lg">
-        <p>Project Name</p>
-        <Link href={"/same place"} />
-      </div>
-
-      <div className="w-40 h-40 rounded-lg shadow-lg">
-        <p>Project Name</p>
-        <Link href={"/same place"} />
-      </div>
+      <div>...</div>
     </div>
   );
 }

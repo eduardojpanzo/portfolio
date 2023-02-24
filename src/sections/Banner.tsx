@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export function Banner() {
   return (
-    <div className="h-96 shadow-inner">
+    <div className="shadow-inner" style={{ height: "calc(100vh - 65px)" }}>
       <div className="max-w-5xl mx-auto h-full flex items-center justify-around">
         <div>
           <h1 className="text-7xl font-bold text-green-600 dark:text-gray-50">
