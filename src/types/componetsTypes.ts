@@ -9,3 +9,7 @@ export type ButtonProps = {
 export type SKillProps = {
   value: string;
 } & ButtonProps;
+
+export type SectionContsinerProps = {
+  children: ReactNode;
+};

@@ -20,15 +20,11 @@ export default function Home() {
       <div className="">
         <Header />
         <Banner />
-        <main className="bg-slate-100 dark:bg-slate-800">
-          <div className="max-w-5xl mx-auto">
-            <About />
-            <Skills />
-            <Formations />
-            <Projects />
-            <Contacts />
-          </div>
-        </main>
+        <About />
+        <Skills />
+        <Formations />
+        <Projects />
+        <Contacts />
         <Footer />
       </div>
     </>

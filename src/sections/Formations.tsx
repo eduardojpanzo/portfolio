@@ -1,8 +1,9 @@
+import { SectionContsiner } from "../components/SectionContsiner";
 import { Title } from "../components/Title";
 
 export function Formations() {
   return (
-    <div className="" style={{ minHeight: "calc(100vh - 65px)" }}>
+    <SectionContsiner>
       <Title name="Formation" />
 
       <div>
@@ -11,6 +12,6 @@ export function Formations() {
       <div>
         3º Ano - INSTIC <span>Computers Engineering</span>
       </div>
-    </div>
+    </SectionContsiner>
   );
 }

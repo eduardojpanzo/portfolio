@@ -2,8 +2,6 @@ import { TitleProps } from "../types/sectionType";
 
 export function Title({ name }: TitleProps) {
   return (
-    <h2 className="uppercase font-bold text-3xl py-4 text-green-800 block">
-      {name}
-    </h2>
+    <h2 className="pt-12 pb-8 font-bold text-3xl text-green-800">{name}</h2>
   );
 }

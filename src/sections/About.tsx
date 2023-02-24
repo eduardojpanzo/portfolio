@@ -1,12 +1,13 @@
 import Image from "next/image";
+import { SectionContsiner } from "../components/SectionContsiner";
 import { Title } from "../components/Title";
 
 export function About() {
   return (
-    <div className="px-4" style={{ minHeight: "calc(100vh - 65px)" }}>
+    <SectionContsiner>
       <Title name="About" />
 
-      <figure className="my-auto md:flex bg-slate-100 rounded-xl p-8 md:p-0 dark:bg-slate-800 overflow-hidden">
+      <figure className="p-8 rounded-xl bg-slate-100 overflow-hidden md:flex md:p-0 dark:bg-slate-800">
         <Image
           src={`https://avatars.githubusercontent.com/u/96853842?v=4`}
           width={384}
@@ -35,6 +36,6 @@ export function About() {
           </figcaption>
         </div>
       </figure>
-    </div>
+    </SectionContsiner>
   );
 }

@@ -1,11 +1,12 @@
 import Image from "next/image";
+import { SectionContsiner } from "../components/SectionContsiner";
 import { Skill } from "../components/Skill";
 import { Title } from "../components/Title";
 import { skillsItems } from "../mock";
 
 export function Skills() {
   return (
-    <div className="px-4 mb-2" style={{ minHeight: "calc(100vh - 65px)" }}>
+    <SectionContsiner>
       <Title name="Skill" />
 
       <div className="my-10">
@@ -23,6 +24,6 @@ export function Skills() {
           </ul>
         </div>
       </div>
-    </div>
+    </SectionContsiner>
   );
 }
