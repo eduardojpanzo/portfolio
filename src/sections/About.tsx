@@ -18,7 +18,9 @@ export function About() {
         />
         <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
           <blockquote>
-            <p className="text-lg font-medium">{aboutMeText}</p>
+            <p className="text-lg font-medium text-justify indent-4">
+              {aboutMeText}
+            </p>
           </blockquote>
 
           <figcaption className="font-medium">
@@ -26,7 +28,7 @@ export function About() {
               João Eduardo Panzo
             </div>
             <div className="text-slate-700 dark:text-slate-500">
-              Programmer, Dine-code
+              Programmer, Dine-code, Vaawel
             </div>
           </figcaption>
         </div>
