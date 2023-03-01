@@ -1,28 +1,31 @@
 import Image from "next/image";
 import { SectionContsiner } from "../components/SectionContsiner";
 import { Title } from "../components/Title";
+import { formationItems } from "../mock";
 
 export function Formations() {
   return (
     <SectionContsiner>
       <Title name="Formation" />
 
-      <div className="flex items-center justify-center flex-wrap">
-        <div className="w-80 h-80 bg-slate-800 flex flex-col justify-between items-center rounded-3xl p-4 mx-4 my-8 dark:bg-slate-200">
-          <Image src={""} alt="" />
-          <div className="text-slate-50 dark:text-slate-800 text-center">
-            <p className="text-xl">Engenharia Informática</p>
-            <p>2020 - Em curso</p>
+      <div className="flex items-center justify-center flex-wrap gap-3 mt-8 transition-all">
+        {formationItems.map(({ name, placeUrl, start, end }) => (
+          <div className="w-72 h-72 bg-slate-800 flex flex-col justify-between items-center border border-transparent rounded-3xl p-4 my-2 dark:border-slate-50">
+            <Image
+              className="max-w-min"
+              src={placeUrl}
+              alt="academy"
+              width={230}
+              height={220}
+            />
+            <div className="text-slate-50 text-center">
+              <p className="text-lg">{name}</p>
+              <p>
+                {start} - {end}
+              </p>
+            </div>
           </div>
-        </div>
-
-        <div className="w-80 h-80 bg-slate-800 flex flex-col justify-between items-center rounded-3xl p-4 mx-4 my-8 dark:bg-slate-200">
-          <Image src={""} alt="" />
-          <div className="text-slate-50 dark:text-slate-800 text-center">
-            <p className="text-xl">Full-Stack Developer</p>
-            <p>2021 - 2022</p>
-          </div>
-        </div>
+        ))}
       </div>
     </SectionContsiner>
   );

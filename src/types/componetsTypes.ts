@@ -13,3 +13,7 @@ export type SKillProps = {
 export type SectionContsinerProps = {
   children: ReactNode;
 };
+
+export type MenuProps = {
+  className?: string;
+};

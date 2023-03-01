@@ -17,7 +17,7 @@ export function Skills() {
                 key={item.name}
                 value={item.name}
                 children={
-                  <Image width={60} height={60} src={item.path} alt="" />
+                  <Image width={60} height={60} src={item.path} alt="skill" />
                 }
               />
             ))}

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { SectionContsiner } from "../components/SectionContsiner";
 import { Title } from "../components/Title";
+import { aboutMeText } from "../mock";
 
 export function About() {
   return (
@@ -13,17 +14,11 @@ export function About() {
           width={384}
           height={384}
           alt="me"
-          className="w-24 h-24  md:h-auto md:rounded-none md:w-60 rounded-full mx-auto"
+          className="w-24 h-24  md:h-auto md:rounded-none md:w-60 rounded-full mx-auto object-cover"
         />
         <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
           <blockquote>
-            <p className="text-lg font-medium">
-              Estudante de programação, interesado em aprender sempre. Desejo
-              ser um dev front-end e trabalhar na área No momento tenho
-              habilidade em HTML,CSS e JS, estudando a fundo ReactJS. Interesado
-              em tecnologia para o densevolvimento web (sou apaixonado), tanto
-              front-end como back-end
-            </p>
+            <p className="text-lg font-medium">{aboutMeText}</p>
           </blockquote>
 
           <figcaption className="font-medium">
