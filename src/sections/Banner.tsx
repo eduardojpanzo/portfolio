@@ -2,12 +2,12 @@ import Image from "next/image";
 
 export function Banner() {
   return (
-    <div className="shadow-inner" style={{ height: "calc(100vh - 65px)" }}>
-      <div className="max-w-5xl mx-auto h-full flex items-center justify-around">
-        <div>
-          <h1 className="text-7xl font-bold text-green-600 dark:text-gray-50">
+    <div className="shadow-inner h-screen">
+      <div className="max-w-5xl mx-auto h-full flex flex-col items-center justify-around md:flex-row">
+        <div className="mt-10 md:mt-0">
+          <h1 className="text-7xl font-bold text-green-600 md:text-7xl dark:text-gray-50">
             Hi, There!
-            <br />{" "}
+            <br />
             <span className="text-gray-900 text-4xl dark:text-green-600">
               I'm João Eduardo Panzo
             </span>
@@ -24,7 +24,7 @@ export function Banner() {
           </div>
         </div>
 
-        <div className="w-72 h-72 rounded-full shadow-lg overflow-hidden">
+        <div className="w-52 h-52 md:w-72 md:h-72 rounded-full shadow-lg overflow-hidden">
           <Image width={288} height={288} src={"/profil.png"} alt="" />
         </div>
       </div>

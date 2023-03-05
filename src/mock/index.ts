@@ -54,3 +54,13 @@ export const networkItems = [
     Icon: FaLinkedinIn,
   },
 ];
+
+export const projectItems = [
+  {
+    name: "",
+    desc: "",
+    url: "https://eduardopanzo.github.io/Jogo-Da-velha",
+    cover: "",
+  },
+  { name: "", desc: "", url: "", cover: "" },
+];
