@@ -1,9 +1,10 @@
 import Image from "next/image";
+import { Networking } from "../components/Networking";
 
 export function Banner() {
   return (
     <div className="shadow-inner h-screen">
-      <div className="max-w-5xl mx-auto h-full flex flex-col items-center justify-around md:flex-row">
+      <div className="relative max-w-5xl mx-auto h-full flex flex-col items-center justify-around md:flex-row">
         <div className="mt-10 md:mt-0">
           <h1 className="text-7xl font-bold text-green-600 md:text-7xl dark:text-gray-50">
             Hi, There!
@@ -27,6 +28,8 @@ export function Banner() {
         <div className="w-52 h-52 md:w-72 md:h-72 rounded-full shadow-lg overflow-hidden">
           <Image width={288} height={288} src={"/profil.png"} alt="" />
         </div>
+
+        <Networking float />
       </div>
     </div>
   );

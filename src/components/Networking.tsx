@@ -9,7 +9,7 @@ export function Networking({ float }: NetworkingProps) {
   return (
     <div
       className={`flex gap-4 pb-3 ${
-        float ? `flex-col absolute left-0 bottom-0` : ``
+        float ? `flex-col absolute right-4 top-3 text-2xl` : ``
       }`}
     >
       {networkItems.map(({ href, Icon }) => (
