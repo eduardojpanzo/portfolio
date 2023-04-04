@@ -14,7 +14,7 @@ export function Banner() {
             </span>
           </h1>
           <h2 className="leading-9 font-bold text-xl text-green-600 dark:text-gray-50">
-            FullStack Devloper
+            JavaScript Developer
           </h2>
 
           <div className="flex gap-4 mt-4">

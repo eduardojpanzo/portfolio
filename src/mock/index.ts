@@ -42,7 +42,7 @@ export const aboutMeTextPt = `
   Sou uma pessoa empática e entusiasta, com habilidades voltadas para o trabalho em equipe, comunicação assertiva, resolução de problemas, responsável e proativa, gosto de aprender com os outros e me aprimorar continuamente.
 `;
 
-export const aboutMeText = `I'm a graduate student in Computer Engineering and passionate about Web Development with a focus on the JavaScript ecosystem.
+export const aboutMeText = `I'm a graduate student in Computer Engineering and passionate about Web Development with a focus on the JavaScript ecosystem (front: ReactJs, back: NodeJs).
 I aspire to get a job in the world of Web Development, gain experience, new knowledge and strengthen my professional life.
 I am an empathetic and enthusiastic person, with skills focused on teamwork, assertive communication, problem solving, responsible and proactive, I like to learn from others and continuously improve myself.`;
 
