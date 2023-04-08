@@ -10,7 +10,10 @@ export function Formations() {
 
       <div className="flex items-center justify-center flex-wrap gap-3 mt-8 transition-all">
         {formationItems.map(({ name, placeUrl, start, end }) => (
-          <div className="w-72 h-72 bg-slate-800 flex flex-col justify-between items-center border border-transparent rounded-3xl p-4 my-2 dark:border-slate-50">
+          <div
+            key={name}
+            className="w-72 h-72 bg-slate-800 flex flex-col justify-between items-center border border-transparent rounded-3xl p-4 my-2 dark:border-slate-50"
+          >
             <Image
               className="max-w-min"
               src={placeUrl}

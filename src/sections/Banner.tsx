@@ -10,7 +10,7 @@ export function Banner() {
             Hi, There!
             <br />
             <span className="text-gray-900 text-4xl dark:text-green-600">
-              I'm João Eduardo Panzo
+              I`&apos;`m João Eduardo Panzo
             </span>
           </h1>
           <h2 className="leading-9 font-bold text-xl text-green-600 dark:text-gray-50">
