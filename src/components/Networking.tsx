@@ -13,7 +13,12 @@ export function Networking({ float }: NetworkingProps) {
       }`}
     >
       {networkItems.map(({ href, Icon }) => (
-        <Link key={href} target="_blank" href={href}>
+        <Link
+          className=" hover:text-green-600 select-none transition-all"
+          key={href}
+          target="_blank"
+          href={href}
+        >
           <Icon />
         </Link>
       ))}

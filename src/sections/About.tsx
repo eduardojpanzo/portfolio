@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { SectionContsiner } from "../components/SectionContsiner";
+import { SectionContainer } from "../components/SectionContsiner";
 import { Title } from "../components/Title";
 import { aboutMeText } from "../mock";
 
 export function About() {
   return (
-    <SectionContsiner>
+    <SectionContainer>
       <Title name="About" />
 
       <figure className="p-8 rounded-xl bg-slate-100 overflow-hidden md:flex md:p-0 dark:bg-slate-800">
@@ -33,6 +33,6 @@ export function About() {
           </figcaption>
         </div>
       </figure>
-    </SectionContsiner>
+    </SectionContainer>
   );
 }

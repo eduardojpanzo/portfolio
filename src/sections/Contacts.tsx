@@ -1,12 +1,12 @@
-import { SectionContsiner } from "../components/SectionContsiner";
+import { SectionContainer } from "../components/SectionContsiner";
 import { Title } from "../components/Title";
 
 export function Contacts() {
   return (
-    <SectionContsiner>
+    <SectionContainer>
       <Title name="Conctacts" />
 
       <div>....</div>
-    </SectionContsiner>
+    </SectionContainer>
   );
 }

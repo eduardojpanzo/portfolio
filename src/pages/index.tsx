@@ -23,8 +23,8 @@ export default function Home() {
         <About />
         <Skills />
         <Formations />
-        {/* <Projects />
-        <Contacts /> */}
+        <Projects />
+        {/* <Contacts /> */}
         <Footer />
       </div>
     </>

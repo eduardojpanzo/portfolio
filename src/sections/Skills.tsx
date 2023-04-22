@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { SectionContsiner } from "../components/SectionContsiner";
+import { SectionContainer } from "../components/SectionContsiner";
 import { Skill } from "../components/Skill";
 import { Title } from "../components/Title";
 import { skillsItems } from "../mock";
 
 export function Skills() {
   return (
-    <SectionContsiner>
+    <SectionContainer>
       <Title name="Skill" />
 
       <div className="my-10">
@@ -20,6 +20,6 @@ export function Skills() {
           </ul>
         </div>
       </div>
-    </SectionContsiner>
+    </SectionContainer>
   );
 }

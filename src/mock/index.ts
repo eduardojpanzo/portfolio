@@ -1,4 +1,9 @@
-import { FaFacebookF, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import {
+  FaFacebookF,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
 
 export const skillsItems = [
   { name: "HTML", path: "/skill/html.svg" },
@@ -48,19 +53,20 @@ I am an empathetic and enthusiastic person, with skills focused on teamwork, ass
 
 export const networkItems = [
   { href: "https://github.com/EduardoPanzo", Icon: FaGithub },
-  { href: "https://www.facebook.com/joao.eduardo.52012548", Icon: FaFacebookF },
   {
     href: "https://www.linkedin.com/in/jo%C3%A3o-eduardo-panzo-19672b237",
     Icon: FaLinkedinIn,
   },
+  { href: "https://www.instagram.com/eduardojpanzo/", Icon: FaInstagram },
+  { href: "https://www.facebook.com/joao.eduardo.52012548", Icon: FaFacebookF },
 ];
 
 export const projectItems = [
   {
-    name: "",
-    desc: "",
+    name: "Jogo da Velha",
+    desc: "Um Jogo onde Úsuario irá jogar e ter um senário de Desafio de Jogo de Velha",
     url: "https://eduardopanzo.github.io/Jogo-Da-velha",
     cover: "",
   },
-  { name: "", desc: "", url: "", cover: "" },
+  { name: "portfolio", desc: "", url: "", cover: "" },
 ];

@@ -10,7 +10,7 @@ export function Banner() {
             Hi, There!
             <br />
             <span className="text-gray-900 text-4xl dark:text-green-600">
-              I`&apos;`m João Eduardo Panzo
+              I &apos; m João Eduardo Panzo
             </span>
           </h1>
           <h2 className="leading-9 font-bold text-xl text-green-600 dark:text-gray-50">
@@ -19,7 +19,7 @@ export function Banner() {
 
           <div className="flex gap-4 mt-4">
             <p className="uppercase flex gap-2 items-center text-gray-700 dark:text-green-600">
-              <span className="text-6xl font-bold">1</span> years of <br />
+              <span className="text-6xl font-bold">2</span> years of <br />
               experience
             </p>
           </div>

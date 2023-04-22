@@ -1,11 +1,11 @@
 import Image from "next/image";
-import { SectionContsiner } from "../components/SectionContsiner";
+import { SectionContainer } from "../components/SectionContsiner";
 import { Title } from "../components/Title";
 import { formationItems } from "../mock";
 
 export function Formations() {
   return (
-    <SectionContsiner>
+    <SectionContainer>
       <Title name="Formation" />
 
       <div className="flex items-center justify-center flex-wrap gap-3 mt-8 transition-all">
@@ -30,6 +30,6 @@ export function Formations() {
           </div>
         ))}
       </div>
-    </SectionContsiner>
+    </SectionContainer>
   );
 }
