@@ -11,7 +11,7 @@ export function Projects() {
       <Title name="Projects" />
 
       <div className="flex items-center justify-center flex-wrap gap-3 mt-8 transition-all">
-        {projectItems.map(({ name, cover, desc, url }) => (
+        {projectItems.map(({ name, cover, desc, url, repo }) => (
           <div
             key={name}
             className="w-72 h-72 bg-slate-800 flex flex-col border border-transparent rounded-3xl my-2 overflow-hidden dark:border-slate-50"
@@ -34,6 +34,7 @@ export function Projects() {
               <div className="flex gap-2 justify-center">
                 <Link
                   className={`py-2 px-3 text-xl rounded-md bg-gray-600 hover:ring-2 hover:ring-gray-300`}
+                  target="_blank"
                   href={url}
                 >
                   <FaEye />
@@ -41,7 +42,8 @@ export function Projects() {
 
                 <Link
                   className={`py-2 px-3 text-xl rounded-md bg-gray-600 hover:ring-2 hover:ring-gray-300`}
-                  href={url}
+                  target="_blank"
+                  href={repo}
                 >
                   <FaGithub />
                 </Link>
