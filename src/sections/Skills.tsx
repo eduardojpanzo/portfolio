@@ -2,7 +2,7 @@ import Image from "next/image";
 import { SectionContainer } from "../components/SectionContsiner";
 import { Skill } from "../components/Skill";
 import { Title } from "../components/Title";
-import { skillsItems } from "../mock";
+import { skillsItems } from "../data";
 
 export function Skills() {
   return (

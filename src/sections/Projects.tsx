@@ -3,7 +3,7 @@ import Link from "next/link";
 import { FaEye, FaGithub } from "react-icons/fa";
 import { SectionContainer } from "../components/SectionContsiner";
 import { Title } from "../components/Title";
-import { projectItems } from "../mock";
+import { projectItems } from "../data";
 
 export function Projects() {
   return (

@@ -67,7 +67,13 @@ export const projectItems = [
     desc: "Um Jogo onde Úsuario irá jogar e ter um senário de Desafio de Jogo de Velha",
     url: "https://eduardopanzo.github.io/Jogo-Da-velha",
     repo: "https://github.com/EduardoPanzo/Jogo-Da-velha",
-    cover: "",
+    cover: "/image/jgdvlh.png",
   },
-  { name: "portfolio", desc: "", url: "", repo: "", cover: "" },
+  {
+    name: "portfolio",
+    desc: "descrição da Habilidade e das formação e experiência em programação",
+    url: "https://eduardopanzo-portfolio.vercel.app/",
+    repo: "https://github.com/EduardoPanzo/portfolio",
+    cover: "/image/prtfl.png",
+  },
 ];

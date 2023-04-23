@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { networkItems } from "../mock";
+import { networkItems } from "../data";
 
 interface NetworkingProps {
   float?: boolean;

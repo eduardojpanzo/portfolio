@@ -1,7 +1,7 @@
 import Image from "next/image";
 import { SectionContainer } from "../components/SectionContsiner";
 import { Title } from "../components/Title";
-import { aboutMeText } from "../mock";
+import { aboutMeText } from "../data";
 
 export function About() {
   return (
