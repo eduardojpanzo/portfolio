@@ -1,4 +1,4 @@
-import { SKillProps } from "../types/componetsTypes";
+import { SKillProps } from "./types";
 
 export function Skill({ value, children, onClick }: SKillProps) {
   return (

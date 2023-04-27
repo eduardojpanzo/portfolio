@@ -1,9 +1,6 @@
 import Link from "next/link";
 import { networkItems } from "../data";
-
-interface NetworkingProps {
-  float?: boolean;
-}
+import { NetworkingProps } from "./types";
 
 export function Networking({ float }: NetworkingProps) {
   return (

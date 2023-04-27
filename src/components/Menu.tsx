@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { MenuProps } from "../types/componetsTypes";
+import { MenuProps } from "./types";
 
 const menuLinks = [
   { path: "", value: "About" },

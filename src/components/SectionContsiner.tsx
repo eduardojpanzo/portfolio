@@ -1,4 +1,4 @@
-import { SectionContainerProps } from "../types/componetsTypes";
+import { SectionContainerProps } from "./types";
 
 export function SectionContainer({ children }: SectionContainerProps) {
   return (

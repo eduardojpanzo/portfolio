@@ -1,4 +1,4 @@
-import { ButtonProps } from "../types/componetsTypes";
+import { ButtonProps } from "./types";
 
 export function Button({ children, className, onClick }: ButtonProps) {
   return (

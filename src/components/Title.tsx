@@ -1,4 +1,4 @@
-import { TitleProps } from "../types/sectionType";
+import { TitleProps } from "./types";
 
 export function Title({ name }: TitleProps) {
   return (
