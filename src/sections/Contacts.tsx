@@ -4,9 +4,11 @@ import { Title } from "../components/Title";
 export function Contacts() {
   return (
     <SectionContainer>
-      <Title name="Conctacts" />
+      <div id="contacts">
+        <Title name="Conctacts" />
 
-      <div>....</div>
+        <div>....</div>
+      </div>
     </SectionContainer>
   );
 }

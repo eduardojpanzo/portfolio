@@ -2,11 +2,11 @@ import Link from "next/link";
 import { MenuProps } from "./types";
 
 const menuLinks = [
-  { path: "", value: "About" },
-  { path: "", value: "Skill" },
-  { path: "", value: "Formation" },
-  { path: "", value: "Projects" },
-  { path: "", value: "Contacts" },
+  { path: "#about", value: "About" },
+  { path: "#skill", value: "Skill" },
+  { path: "#formation", value: "Formation" },
+  { path: "#projects", value: "Projects" },
+  { path: "#contacts", value: "Contacts" },
 ];
 export function Menu({ className }: MenuProps) {
   return (
