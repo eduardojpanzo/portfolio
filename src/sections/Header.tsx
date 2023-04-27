@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Logo } from "../components/Logo";
 import { Menu } from "../components/Menu";
 import { Switch } from "../components/Switch";
@@ -21,7 +21,7 @@ export function Header() {
             className="md:hidden text-2xl font-bold cursor-pointer"
             onClick={() => setShowMenu(!showMenu)}
           >
-            <FaBars />
+            {showMenu ? <FaTimes /> : <FaBars />}
           </div>
           <Menu
             className={`${classNameMenuMobile} ${

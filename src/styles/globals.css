@@ -1,13 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
-.h-banner {
-  min-height: 100vh;
+html {
+  @apply scroll-smooth;
+  -webkit-font-smoothing: antialiased;
 }
-
-@tailwind base;
-@tailwind components;
-@tailwind utilities;

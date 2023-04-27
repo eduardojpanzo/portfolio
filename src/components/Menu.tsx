@@ -16,6 +16,7 @@ export function Menu({ className }: MenuProps) {
           className="font-semibold text-gray-400 hover:text-gray-500"
           key={value}
           href={path}
+          scroll={false}
         >
           {value}
         </Link>

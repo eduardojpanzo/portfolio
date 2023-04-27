@@ -17,7 +17,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.png" />
       </Head>
 
-      <div>
+      <div id="top">
         <Header />
         <Banner />
         <About />
