@@ -76,4 +76,11 @@ export const projectItems = [
     repo: "https://github.com/EduardoPanzo/portfolio",
     cover: "/image/prtfl.png",
   },
+  {
+    name: "Simplest App",
+    desc: "set of small applications to test knowledge and train my skill",
+    url: "https://eduardopanzo.github.io/simplest-App/",
+    repo: "https://github.com/EduardoPanzo/simplest-App",
+    cover: "/image/spa.png",
+  },
 ];

@@ -22,8 +22,8 @@ export function Projects() {
                   className="w-full min-w-full"
                   src={cover}
                   alt="academy"
-                  width={230}
-                  height={220}
+                  width={530}
+                  height={520}
                 />
               </div>
               <div className="flex flex-col justify-between p-4 flex-1 text-slate-50">
