@@ -3,6 +3,7 @@
 import { useTheme } from "next-themes";
 import { useEffect, useState } from "react";
 import { Button } from "./Button";
+import { Skeleton } from "./Skeleton";
 
 export function Switch() {
   const { theme, setTheme, systemTheme } = useTheme();
@@ -50,5 +51,9 @@ export function Switch() {
     );
   };
 
-  return <>{renderThemeChanger()}</>;
+  return (
+    <>
+      <Skeleton isLoaded={mounted}>{renderThemeChanger()}</Skeleton>
+    </>
+  );
 }

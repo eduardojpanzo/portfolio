@@ -1,3 +1,4 @@
+import { Skeleton } from "../components/Skeleton";
 import { About } from "../sections/About";
 import { Banner } from "../sections/Banner";
 import { Footer } from "../sections/Footer";
