@@ -6,5 +6,8 @@ const nextConfig = {
     domains: ["avatars.githubusercontent.com"],
   },
 };
+const withNextIntl = require("next-intl/plugin")();
 
-module.exports = nextConfig;
+module.exports = withNextIntl({
+  nextConfig,
+});
