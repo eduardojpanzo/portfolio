@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { Button } from "./Button";
 import { Skeleton } from "./Skeleton";
 
-export function Switch() {
+export function SwitchTheme() {
   const { theme, setTheme, systemTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 

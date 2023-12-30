@@ -1,5 +1,16 @@
 {
   "Index": {
     "title": "Hello world!"
+  },
+  "Menu": {
+    "about": "About",
+    "skill": "Skill",
+    "formation": "Formation",
+    "projects": "Projects",
+    "contacts": "Contacts"
+  },
+  "SwitcherLang": {
+    "label": "Change language",
+    "locale": "{locale, select, pt {PT} en {EN} other {Unknown}}"
   }
 }

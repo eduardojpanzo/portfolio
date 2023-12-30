@@ -6,14 +6,10 @@ import { FaBars, FaTimes } from "react-icons/fa";
 
 import { clsx } from "clsx";
 
-const menuLinks = [
-  { path: "#about", value: "About" },
-  { path: "#skill", value: "Skill" },
-  { path: "#formation", value: "Formation" },
-  { path: "#projects", value: "Projects" },
-  { path: "#contacts", value: "Contacts" },
-];
-export function Menu() {
+interface Props {
+  menuLinks: { path: string; value: string }[];
+}
+export function Menu({ menuLinks }: Props) {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
@@ -33,7 +29,7 @@ export function Menu() {
           }
         )}
       >
-        {menuLinks.map(({ path, value }) => (
+        {menuLinks?.map(({ path, value }) => (
           <Link
             className="font-semibold text-gray-400 hover:text-gray-500"
             key={value}
