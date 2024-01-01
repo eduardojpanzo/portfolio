@@ -12,5 +12,9 @@
   "SwitcherLang": {
     "label": "Mude o idioma",
     "locale": "{locale, select, pt {PT} en {EN} other {Unknown}}"
+  },"Banner":{
+    "greet":"Olá!",
+    "name":"Eu sou João Eduardo Panzo",
+    "skill":"Desenvolvedor Web | Entusiasta em Desenvolvimeto Mobile | Estudante de engenharia de software","years":"anos de","experience":"Experiência"
   }
 }
