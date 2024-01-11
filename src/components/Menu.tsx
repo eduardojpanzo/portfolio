@@ -34,7 +34,7 @@ export function Menu({ menuLinks }: Props) {
             className="font-semibold text-gray-400 hover:text-gray-500"
             key={value}
             href={path}
-            scroll={false}
+            scroll={true}
           >
             {value}
           </Link>

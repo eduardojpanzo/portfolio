@@ -1,9 +1,10 @@
 import Image from "next/image";
 import { SectionContainer } from "../components/SectionContsiner";
 import { Title } from "../components/Title";
-import { aboutMeText } from "../data";
+import { useTranslations } from "next-intl";
 
 export function About() {
+  const t = useTranslations("About");
   return (
     <SectionContainer>
       <div id="about">
@@ -20,7 +21,7 @@ export function About() {
           <div className="pt-6 md:p-8 text-center md:text-left space-y-4">
             <blockquote>
               <p className="text-lg font-medium text-justify indent-4">
-                {aboutMeText}
+                {t("desc")}
               </p>
             </blockquote>
 
@@ -29,7 +30,7 @@ export function About() {
                 João Eduardo Panzo
               </div>
               <div className="text-slate-700 dark:text-slate-500">
-                Programmer, Dine-code, Vaawel
+                {t("career")}, Dine-code, Vaawel
               </div>
             </figcaption>
           </div>

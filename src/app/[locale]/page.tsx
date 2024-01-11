@@ -7,17 +7,14 @@ import { Header } from "../../sections/Header";
 import { Projects } from "../../sections/Projects";
 import { Skills } from "../../sections/Skills";
 interface Props {
-  params:{locale:string}
+  params: { locale: string };
 }
 
-export default function Index({params}:Props) {
-  const locale = params.locale
-
-  console.log(locale);
-  
+export default function Index({ params }: Props) {
+  const locale = params.locale;
   return (
     <div id="top">
-      <Header />
+      <Header locale={locale} />
       <Banner />
       <About />
       <Skills />

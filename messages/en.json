@@ -12,10 +12,16 @@
   "SwitcherLang": {
     "label": "Change language",
     "locale": "{locale, select, pt {PT} en {EN} other {Unknown}}"
-  },"Banner":{
-    "greet":"Hi, There!",
-    "name":"I'm João Eduardo Panzo",
-    "skill":"Web Developer | Mobile enthusiastic | Software engineering student",
-    "years":"years of","experience":"experience"
+  },
+  "Banner": {
+    "greet": "Hi, There!",
+    "name": "I'm João Eduardo Panzo",
+    "skill": "Web Developer | Mobile enthusiastic | Software engineering student",
+    "years": "years of",
+    "experience": "experience"
+  },
+  "About": {
+    "desc": "I'm a graduate student in Computer Engineering and passionate about Web Development with a focus on the JavaScript ecosystem (ReactJs,React-Native, NodeJs). I aspire to get a job in the world of Web Development, gain experience, new knowledge and strengthen my professional life. I am an empathetic and enthusiastic person, with skills focused on teamwork, assertive communication, problem solving, responsible and proactive, I like to learn from others and continuously improve myself.",
+    "career": "Programmer"
   }
 }

@@ -9,14 +9,14 @@ export function Banner() {
       <div className="relative max-w-5xl mx-auto h-full flex flex-col items-center justify-around md:flex-row">
         <div className="mt-10 md:mt-0">
           <h1 className="text-7xl font-bold text-green-600 md:text-7xl dark:text-gray-50">
-           {t("greet")}
+            {t("greet")}
             <br />
             <span className="text-gray-900 text-4xl dark:text-green-600">
               {t("name")}
             </span>
           </h1>
           <h2 className="leading-9 font-bold text-xl text-green-600 dark:text-gray-50">
-          {t("skill")}
+            {t("skill")}
           </h2>
 
           <div className="flex gap-4 mt-4">
@@ -27,7 +27,7 @@ export function Banner() {
           </div>
         </div>
 
-        <div className="w-52 h-52 md:w-72 md:h-72 rounded-full shadow-lg overflow-hidden">
+        <div className="w-52 h-52 md:min-w-[288px] md:h-72 rounded-full shadow-lg overflow-hidden">
           <Image width={288} height={288} src={"/profil.png"} alt="" />
         </div>
 

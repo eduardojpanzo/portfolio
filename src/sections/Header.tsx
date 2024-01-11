@@ -4,14 +4,17 @@ import { Menu } from "../components/Menu";
 import { SwitchTheme } from "../components/SwitchTheme";
 import SwitcherLang from "../components/SwitcherLang";
 
-export function Header() {
+interface Props {
+  locale: string;
+}
+export function Header({ locale }: Props) {
   const t = useTranslations("Menu");
   const menuLinks = [
-    { path: "#about", value: `${t("about")}` },
-    { path: "#skill", value: `${t("skill")}` },
-    { path: "#formation", value: `${t("formation")}` },
-    { path: "#projects", value: `${t("projects")}` },
-    { path: "#contacts", value: `${t("contacts")}` },
+    { path: `/${locale}#about`, value: `${t("about")}` },
+    { path: `/${locale}#skill`, value: `${t("skill")}` },
+    { path: `/${locale}#formation`, value: `${t("formation")}` },
+    { path: `/${locale}#projects`, value: `${t("projects")}` },
+    { path: `/${locale}#contacts`, value: `${t("contacts")}` },
   ];
 
   return (
