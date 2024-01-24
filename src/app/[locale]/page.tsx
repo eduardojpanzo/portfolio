@@ -1,6 +1,6 @@
-import { Skeleton } from "../../components/Skeleton";
 import { About } from "../../sections/About";
 import { Banner } from "../../sections/Banner";
+import { Contacts } from "../../sections/Contacts";
 import { Footer } from "../../sections/Footer";
 import { Formations } from "../../sections/Formations";
 import { Header } from "../../sections/Header";
@@ -20,7 +20,7 @@ export default function Index({ params }: Props) {
       <Skills />
       <Formations />
       <Projects />
-      {/* <Contacts /> */}
+      <Contacts />
       <Footer />
     </div>
   );
