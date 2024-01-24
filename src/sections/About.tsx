@@ -5,10 +5,11 @@ import { useTranslations } from "next-intl";
 
 export function About() {
   const t = useTranslations("About");
+
   return (
     <SectionContainer>
       <div id="about">
-        <Title name="About" />
+        <Title name={t("title")} />
 
         <figure className="p-8 rounded-xl bg-slate-100 overflow-hidden md:flex md:p-0 dark:bg-slate-800">
           <Image

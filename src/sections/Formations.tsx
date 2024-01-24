@@ -1,13 +1,35 @@
 import Image from "next/image";
 import { SectionContainer } from "../components/SectionContsiner";
 import { Title } from "../components/Title";
-import { formationItems } from "../data";
+import { useTranslations } from "next-intl";
+
+const formationItems = [
+  {
+    name: "Computer Science and engineering",
+    start: "2020",
+    end: "Ongoing",
+    placeUrl: "/image/academy01.png",
+  },
+  {
+    name: "Full-Stack Developer",
+    start: "2021",
+    end: "2022",
+    placeUrl: "/image/academy02.png",
+  },
+  {
+    name: "Designer and Multimedia",
+    start: "2021",
+    end: "2021",
+    placeUrl: "/image/academy03.png",
+  },
+];
 
 export function Formations() {
+  const t = useTranslations("Formation");
   return (
     <SectionContainer>
       <div id="formation">
-        <Title name="Formation" />
+        <Title name={t("title")} />
 
         <div className="flex items-center justify-center flex-wrap gap-3 mt-8 transition-all">
           {formationItems.map(({ name, placeUrl, start, end }) => (

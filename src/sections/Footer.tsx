@@ -3,6 +3,7 @@ import { Menu } from "../components/Menu";
 import { Networking } from "../components/Networking";
 
 export function Footer() {
+  const f = useTranslations("Projects");
   const t = useTranslations("Menu");
   const menuLinks = [
     { path: "#about", value: `${t("about")}` },
@@ -14,12 +15,10 @@ export function Footer() {
   return (
     <footer>
       <div className="max-w-7xl my-0 mx-auto px-5 pt-7 flex flex-col items-center gap-2 py-2">
-        <p className="text-2xl ">João Eduardo Panzo</p>
+        <p className="text-xl ">João Eduardo Panzo</p>
         <Menu menuLinks={menuLinks} />
         <Networking />
-        <p className="text-xs">
-          Copyright © | Coded with 💚 by João Eduardo Panzo
-        </p>
+        <p className="text-xs">Copyright © | {f("madeto")}</p>
       </div>
     </footer>
   );

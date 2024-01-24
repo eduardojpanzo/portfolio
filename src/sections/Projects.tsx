@@ -3,13 +3,38 @@ import Link from "next/link";
 import { FaEye, FaGithub } from "react-icons/fa";
 import { SectionContainer } from "../components/SectionContsiner";
 import { Title } from "../components/Title";
-import { projectItems } from "../data";
+import { useTranslations } from "next-intl";
+
+export const projectItems = [
+  {
+    name: "Jogo da Velha",
+    desc: "Um Jogo onde Úsuario irá jogar e ter um senário de Desafio de Jogo de Velha",
+    url: "https://eduardopanzo.github.io/Jogo-Da-velha",
+    repo: "https://github.com/EduardoPanzo/Jogo-Da-velha",
+    cover: "/image/jgdvlh.png",
+  },
+  {
+    name: "portfolio",
+    desc: "descrição da Habilidade e das formação e experiência em programação",
+    url: "https://eduardopanzo-portfolio.vercel.app/",
+    repo: "https://github.com/EduardoPanzo/portfolio",
+    cover: "/image/prtfl.png",
+  },
+  {
+    name: "Simplest App",
+    desc: "set of small applications to test knowledge and train my skill",
+    url: "https://eduardopanzo.github.io/simplest-App/",
+    repo: "https://github.com/EduardoPanzo/simplest-App",
+    cover: "/image/spa.png",
+  },
+];
 
 export function Projects() {
+  const t = useTranslations("Projects");
   return (
     <SectionContainer>
       <div id="projects">
-        <Title name="Projects" />
+        <Title name={t("title")} />
 
         <div className="flex items-center justify-center flex-wrap gap-3 mt-8 transition-all">
           {projectItems.map(({ name, cover, desc, url, repo }) => (

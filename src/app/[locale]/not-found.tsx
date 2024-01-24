@@ -1,10 +1,6 @@
 import Link from "next/link";
+import { NotFoundSection } from "../../sections/NotFound";
 
 export default function NotFound() {
-  return (
-    <div className="min-h-screen flex items-center justify-center text-7xl font-bold">
-      Oops! <span className="text-green-800"> Zoro </span> way!
-      <Link href="/">Return Home</Link>
-    </div>
-  );
+  return <NotFoundSection />;
 }

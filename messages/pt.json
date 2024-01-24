@@ -21,7 +21,23 @@
     "experience": "Experiência"
   },
   "About": {
+    "title": "Sobre",
     "desc": "Sou estudante de graduação em Engenharia informática e apaixonado em Desenvolvimento Web com foco no ecossistema JavaScript (ReactJs,React-Native, NodeJs). Aspiro a conseguir um emprego no mundo do Desenvolvimento Web, ganhar experiência, novos conhecimentos e fortalecer a minha vida profissional. Sou uma pessoa empática e entusiasta, com habilidades voltadas para o trabalho em equipe, comunicação assertiva, resolução de problemas, responsável e proativa, gosto de aprender com os outros e me aprimorar continuamente.",
     "career": "Programador"
+  },
+  "Skill": {
+    "title": "Habilidade"
+  },
+  "Formation": {
+    "title": "Formação"
+  },
+  "Projects": {
+    "title": "Projectos"
+  },
+  "Contacts": {
+    "title": "Contactos"
+  },
+  "Footer": {
+    "madeto": "Feito com 💚 por João Eduardo Panzo"
   }
 }

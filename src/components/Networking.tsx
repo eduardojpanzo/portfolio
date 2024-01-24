@@ -1,6 +1,21 @@
 import Link from "next/link";
-import { networkItems } from "../data";
 import { NetworkingProps } from "./types";
+import {
+  FaFacebookF,
+  FaGithub,
+  FaInstagram,
+  FaLinkedinIn,
+} from "react-icons/fa";
+
+export const networkItems = [
+  { href: "https://github.com/EduardoPanzo", Icon: FaGithub },
+  {
+    href: "https://www.linkedin.com/in/jo%C3%A3o-eduardo-panzo-19672b237",
+    Icon: FaLinkedinIn,
+  },
+  { href: "https://www.instagram.com/eduardojpanzo/", Icon: FaInstagram },
+  { href: "https://www.facebook.com/joao.eduardo.52012548", Icon: FaFacebookF },
+];
 
 export function Networking({ float }: NetworkingProps) {
   return (
