@@ -3,48 +3,48 @@ import { SectionContainer } from "../components/SectionContsiner";
 import { Title } from "../components/Title";
 
 export function Contacts() {
-  const t = useTranslations("Projects");
+  const t = useTranslations("Contacts");
   return (
     <SectionContainer>
       <div id="contacts">
         <Title name={t("title")} />
 
         <div className="flex items-center justify-center ">
-          <form className="p-8  min-w-[320px]">
-            <div className="flex gap-4">
-              <label htmlFor="nome" className="block mb-2">
-                Nome:
+          <form className="p-8  min-w-[320px] text-left">
+            <div className="flex flex-col  gap-4 md:flex-row">
+              <label htmlFor="name" className="block mb-2">
+                {t("form.name")}
               </label>
               <input
                 type="text"
-                id="nome"
-                name="nome"
-                placeholder="Digite seu nome"
+                id="name"
+                name="name"
+                placeholder={t("form.namePl")}
                 className="w-full p-2 mb-4 border rounded bg-transparent"
                 required
               />
 
               <label htmlFor="email" className="block mb-2">
-                Email:
+                {t("form.email")}
               </label>
               <input
                 type="email"
                 id="email"
                 name="email"
-                placeholder="Digite seu email"
+                placeholder={t("form.emailPl")}
                 className="w-full p-2 mb-4 border rounded bg-transparent"
                 required
               />
             </div>
 
-            <label htmlFor="mensagem" className="block mb-2">
-              Mensagem:
+            <label htmlFor="msg" className="block mb-2">
+              {t("form.msg")}
             </label>
             <textarea
-              id="mensagem"
-              name="mensagem"
+              id="msg"
+              name="msg"
               rows={4}
-              placeholder="Digite sua mensagem"
+              placeholder={t("form.msgPl")}
               className="w-full p-2 mb-4 border rounded bg-transparent"
               required
             ></textarea>

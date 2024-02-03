@@ -35,7 +35,15 @@
     "title": "Projectos"
   },
   "Contacts": {
-    "title": "Contactos"
+    "title": "Contactos",
+    "form": {
+      "name": "Nome",
+      "email": "E-mail",
+      "msg": "Mensagem",
+      "namePl": "Informe o seu nome",
+      "emailPl": "Informe o seu email",
+      "msgPl": "Escreva aqui a sua mensagem"
+    }
   },
   "Footer": {
     "madeto": "Feito com 💚 por João Eduardo Panzo"
