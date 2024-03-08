@@ -1,6 +1,26 @@
 import { useTranslations } from "next-intl";
 import { SectionContainer } from "../components/SectionContsiner";
 import { Title } from "../components/Title";
+import { CopyButton } from "../components/CopyButton";
+
+const contacts = [
+  {
+    title: "E-mail",
+    name: "joaoeduardopanzo",
+    link: "joaoeduardopanzo@gmail.com",
+    isMail: true,
+  },
+  {
+    title: "GitHub",
+    name: "EduardoPanzo",
+    link: "https://github.com/eduardojpanzo",
+  },
+  {
+    title: "LinkedIn",
+    name: "joãoeduardopanzo",
+    link: "https://www.linkedin.com/in/joãoeduardopanzo/",
+  },
+];
 
 export function Contacts() {
   const t = useTranslations("Contacts");
@@ -9,54 +29,26 @@ export function Contacts() {
       <div id="contacts">
         <Title name={t("title")} />
 
-        <div className="flex items-center justify-center ">
-          <form className="p-8  min-w-[320px] text-left">
-            <div className="flex flex-col  gap-4 md:flex-row">
-              <label htmlFor="name" className="block mb-2">
-                {t("form.name")}
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                placeholder={t("form.namePl")}
-                className="w-full p-2 mb-4 border rounded bg-transparent"
-                required
-              />
-
-              <label htmlFor="email" className="block mb-2">
-                {t("form.email")}
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder={t("form.emailPl")}
-                className="w-full p-2 mb-4 border rounded bg-transparent"
-                required
-              />
-            </div>
-
-            <label htmlFor="msg" className="block mb-2">
-              {t("form.msg")}
-            </label>
-            <textarea
-              id="msg"
-              name="msg"
-              rows={4}
-              placeholder={t("form.msgPl")}
-              className="w-full p-2 mb-4 border rounded bg-transparent"
-              required
-            ></textarea>
-
-            <button
-              type="submit"
-              className="bg-green-500 text-white p-2 rounded cursor-pointer hover:bg-green-600 transition duration-300"
+        <ul className="grid grid-cols-2 gap-5 justify-center">
+          {contacts.map(({ link, name, title, isMail }, idx) => (
+            <li
+              key={name + title + idx}
+              className="min-w-60 flex flex-col items-center  border-2 border-green-800 p-4 rounded-xl"
             >
-              Enviar
-            </button>
-          </form>
-        </div>
+              <span className="font-bold text-2xl">{title}</span>
+              <div className="flex gap-1 md:gap-3 items-center">
+                <a
+                  href={isMail ? `mailto:${link}` : link}
+                  target="_blank"
+                  className="text-lg md:text-xl text-slate-300 truncate"
+                >
+                  {name}
+                </a>
+                {isMail && <CopyButton textToCopy={link} />}
+              </div>
+            </li>
+          ))}
+        </ul>
       </div>
     </SectionContainer>
   );
