@@ -13,7 +13,7 @@ const contacts = [
   {
     title: "GitHub",
     name: "EduardoPanzo",
-    link: "https://github.com/EduardoPanzo",
+    link: "https://github.com/eduardojpanzo",
   },
   {
     title: "LinkedIn",
