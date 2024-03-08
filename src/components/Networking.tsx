@@ -8,9 +8,9 @@ import {
 } from "react-icons/fa";
 
 export const networkItems = [
-  { href: "https://github.com/EduardoPanzo", Icon: FaGithub },
+  { href: "https://github.com/eduardojpanzo", Icon: FaGithub },
   {
-    href: "https://www.linkedin.com/in/jo%C3%A3o-eduardo-panzo-19672b237",
+    href: "https://www.linkedin.com/in/joãoeduardopanzo",
     Icon: FaLinkedinIn,
   },
   { href: "https://www.instagram.com/eduardojpanzo/", Icon: FaInstagram },
