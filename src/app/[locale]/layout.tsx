@@ -1,11 +1,11 @@
 import { ReactNode } from "react";
 import { Raleway } from "next/font/google";
-import { notFound } from "next/navigation";
-import { unstable_setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
 import { Providers } from "./providers";
-
-import { locales } from "../../config";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages } from "next-intl/server";
+import { notFound } from "next/navigation";
+import { routing } from "../../i18n/routing";
 
 type Props = {
   children: ReactNode;
@@ -14,9 +14,9 @@ type Props = {
 
 const raleway = Raleway({ subsets: ["latin"] });
 
-export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
-}
+// export function generateStaticParams() {
+//   return locales.map((locale) => ({ locale }));
+// }
 
 export const metadata: Metadata = {
   title: "Protifolio",
@@ -33,15 +33,20 @@ export default async function LocaleLayout({
   children,
   params: { locale },
 }: Props) {
-  // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound();
+  // Ensure that the incoming `locale` is valid
+  if (!routing.locales.includes(locale as any)) {
+    notFound();
+  }
 
-  // Enable static rendering
-  unstable_setRequestLocale(locale);
+  // Providing all messages to the client
+  // side is the easiest way to get started
+  const messages = await getMessages();
   return (
     <html lang={locale}>
       <body className={raleway.className}>
-        <Providers>{children}</Providers>
+        <NextIntlClientProvider messages={messages}>
+          <Providers>{children}</Providers>
+        </NextIntlClientProvider>
       </body>
     </html>
   );
