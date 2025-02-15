@@ -2,9 +2,9 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 
 import { clsx } from "clsx";
+import { MenuIcon, X } from "lucide-react";
 
 interface Props {
   menuLinks: { path: string; value: string }[];
@@ -18,7 +18,7 @@ export function Menu({ menuLinks }: Props) {
         className="md:hidden text-2xl font-bold cursor-pointer"
         onClick={() => setShowMenu(!showMenu)}
       >
-        {showMenu ? <FaTimes /> : <FaBars />}
+        {showMenu ? <X /> : <MenuIcon />}
       </div>
       <div
         className={clsx(

@@ -1,21 +1,30 @@
 import { ReactNode } from "react";
-import { Raleway } from "next/font/google";
-import { notFound } from "next/navigation";
-import { unstable_setRequestLocale } from "next-intl/server";
 import type { Metadata } from "next";
+import { notFound } from "next/navigation";
+import { NextIntlClientProvider } from "next-intl";
+import { getMessages, setRequestLocale } from "next-intl/server";
 import { Providers } from "./providers";
-
-import { locales } from "../../config";
+import { routing } from "@/i18n/routing";
+import localFont from "next/font/local";
 
 type Props = {
   children: ReactNode;
   params: { locale: string };
 };
 
-const raleway = Raleway({ subsets: ["latin"] });
+const geistSans = localFont({
+  src: "./../fonts/GeistVF.woff",
+  variable: "--font-geist-sans",
+  weight: "100 900",
+});
+const geistMono = localFont({
+  src: "./../fonts/GeistMonoVF.woff",
+  variable: "--font-geist-mono",
+  weight: "100 900",
+});
 
 export function generateStaticParams() {
-  return locales.map((locale) => ({ locale }));
+  return routing.locales.map((locale) => ({ locale }));
 }
 
 export const metadata: Metadata = {
@@ -33,15 +42,24 @@ export default async function LocaleLayout({
   children,
   params: { locale },
 }: Props) {
-  // Validate that the incoming `locale` parameter is valid
-  if (!locales.includes(locale as any)) notFound();
+  // Ensure that the incoming `locale` is valid
+  if (!routing.locales.includes(locale as "en" | "pt")) {
+    notFound();
+  }
 
-  // Enable static rendering
-  unstable_setRequestLocale(locale);
+  setRequestLocale(locale);
+
+  // Providing all messages to the client
+  // side is the easiest way to get started
+  const messages = await getMessages();
   return (
     <html lang={locale}>
-      <body className={raleway.className}>
-        <Providers>{children}</Providers>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
+        <NextIntlClientProvider messages={messages}>
+          <Providers>{children}</Providers>
+        </NextIntlClientProvider>
       </body>
     </html>
   );

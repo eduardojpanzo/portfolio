@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Networking } from "../components/Networking";
+import { Networking } from "@/components/Networking";
 import { useTranslations } from "next-intl";
 
 export function Banner() {

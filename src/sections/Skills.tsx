@@ -1,7 +1,7 @@
 import Image from "next/image";
-import { SectionContainer } from "../components/SectionContsiner";
-import { Skill } from "../components/Skill";
-import { Title } from "../components/Title";
+import { SectionContainer } from "@/components/SectionContsiner";
+import { Skill } from "@/components/Skill";
+import { Title } from "@/components/Title";
 import { useTranslations } from "next-intl";
 
 export const skillsItems = [

@@ -1,15 +1,15 @@
 "use client";
 
 import { useEffect } from "react";
-import { Button } from "../../components/Button";
-import { useRouter } from "../../navigation";
+import { Button } from "@/components/Button";
+import { useRouter } from "@/i18n/routing";
 
 type Props = {
   error: Error;
   reset(): void;
 };
 
-export default function Error({ error, reset }: Props) {
+export default function Error({ error }: Props) {
   const { push } = useRouter();
   useEffect(() => {
     console.error(error);

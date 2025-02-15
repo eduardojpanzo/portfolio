@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
-import { Menu } from "../components/Menu";
-import { Networking } from "../components/Networking";
+import { Menu } from "@/components/Menu";
+import { Networking } from "@/components/Networking";
 
 export function Footer() {
   const f = useTranslations("Projects");

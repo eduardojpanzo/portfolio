@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { FaEye, FaGithub } from "react-icons/fa";
-import { SectionContainer } from "../components/SectionContsiner";
-import { Title } from "../components/Title";
+import { SectionContainer } from "@/components/SectionContsiner";
+import { Title } from "@/components/Title";
 import { useTranslations } from "next-intl";
+import { Eye, Github } from "lucide-react";
 
 export const projectItems = [
   {
@@ -63,7 +63,7 @@ export function Projects() {
                     target="_blank"
                     href={url}
                   >
-                    <FaEye />
+                    <Eye />
                   </Link>
 
                   <Link
@@ -71,7 +71,7 @@ export function Projects() {
                     target="_blank"
                     href={repo}
                   >
-                    <FaGithub />
+                    <Github />
                   </Link>
                 </div>
               </div>
