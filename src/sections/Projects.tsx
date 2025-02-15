@@ -9,22 +9,22 @@ export const projectItems = [
   {
     name: "Jogo da Velha",
     desc: "Um Jogo onde Úsuario irá jogar e ter um senário de Desafio de Jogo de Velha",
-    url: "https://eduardopanzo.github.io/Jogo-Da-velha",
-    repo: "https://github.com/EduardoPanzo/Jogo-Da-velha",
+    url: "https://eduardojpanzo.github.io/gamesjs/",
+    repo: "https://github.com/eduardojpanzo/gamesjs",
     cover: "/image/jgdvlh.png",
   },
   {
     name: "portfolio",
     desc: "descrição da Habilidade e das formação e experiência em programação",
-    url: "https://eduardopanzo-portfolio.vercel.app/",
-    repo: "https://github.com/EduardoPanzo/portfolio",
+    url: "https://eduardojpanzo.vercel.app/",
+    repo: "https://github.com/eduardojpanzo/portfolio",
     cover: "/image/prtfl.png",
   },
   {
     name: "Simplest App",
     desc: "set of small applications to test knowledge and train my skill",
-    url: "https://eduardopanzo.github.io/simplest-App/",
-    repo: "https://github.com/EduardoPanzo/simplest-App",
+    url: "https://eduardojpanzo.github.io/simplest-app/",
+    repo: "https://github.com/eduardojpanzo/simplest-app",
     cover: "/image/spa.png",
   },
 ];
