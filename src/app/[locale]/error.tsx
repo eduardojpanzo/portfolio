@@ -1,8 +1,8 @@
 "use client";
 
 import { useEffect } from "react";
-import { Button } from "../../components/Button";
-import { useRouter } from "../../i18n/routing";
+import { Button } from "@/components/Button";
+import { useRouter } from "@/i18n/routing";
 
 type Props = {
   error: Error;

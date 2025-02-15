@@ -1,20 +1,15 @@
 import Link from "next/link";
 import { NetworkingProps } from "./types";
-import {
-  FaFacebookF,
-  FaGithub,
-  FaInstagram,
-  FaLinkedinIn,
-} from "react-icons/fa";
+import { Facebook, Github, Instagram, Linkedin } from "lucide-react";
 
 export const networkItems = [
-  { href: "https://github.com/eduardojpanzo", Icon: FaGithub },
+  { href: "https://github.com/eduardojpanzo", Icon: Github },
   {
     href: "https://www.linkedin.com/in/joãoeduardopanzo",
-    Icon: FaLinkedinIn,
+    Icon: Linkedin,
   },
-  { href: "https://www.instagram.com/eduardojpanzo/", Icon: FaInstagram },
-  { href: "https://www.facebook.com/joao.eduardo.52012548", Icon: FaFacebookF },
+  { href: "https://www.instagram.com/eduardojpanzo/", Icon: Instagram },
+  { href: "https://www.facebook.com/joao.eduardo.52012548", Icon: Facebook },
 ];
 
 export function Networking({ float }: NetworkingProps) {

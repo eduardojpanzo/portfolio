@@ -1,5 +1,6 @@
 "use client";
-import { FaClipboard } from "react-icons/fa";
+
+import { Clipboard } from "lucide-react";
 
 interface CopyButtonProps {
   textToCopy: string;
@@ -15,7 +16,7 @@ export function CopyButton({ textToCopy }: CopyButtonProps) {
       onClick={() => handleCopy()}
       className="inline-flex justify-center items-center"
     >
-      <FaClipboard title="Clique aqui para copiar" className="fill-white" />
+      <Clipboard size={20} className="fill-white" />
     </button>
   );
 }
