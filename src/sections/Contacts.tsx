@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
-import { SectionContainer } from "../components/SectionContsiner";
-import { Title } from "../components/Title";
-import { CopyButton } from "../components/CopyButton";
+import { SectionContainer } from "@/components/SectionContsiner";
+import { Title } from "@/components/Title";
+import { CopyButton } from "@/components/CopyButton";
 
 const contacts = [
   {

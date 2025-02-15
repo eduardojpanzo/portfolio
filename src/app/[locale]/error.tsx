@@ -9,7 +9,7 @@ type Props = {
   reset(): void;
 };
 
-export default function Error({ error, reset }: Props) {
+export default function Error({ error }: Props) {
   const { push } = useRouter();
   useEffect(() => {
     console.error(error);

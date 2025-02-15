@@ -4,7 +4,7 @@ import { notFound } from "next/navigation";
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages, setRequestLocale } from "next-intl/server";
 import { Providers } from "./providers";
-import { routing } from "../../i18n/routing";
+import { routing } from "@/i18n/routing";
 import localFont from "next/font/local";
 
 type Props = {
@@ -43,7 +43,7 @@ export default async function LocaleLayout({
   params: { locale },
 }: Props) {
   // Ensure that the incoming `locale` is valid
-  if (!routing.locales.includes(locale as any)) {
+  if (!routing.locales.includes(locale as "en" | "pt")) {
     notFound();
   }
 

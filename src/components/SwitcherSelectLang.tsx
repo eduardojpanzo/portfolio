@@ -2,7 +2,7 @@
 
 import clsx from "clsx";
 import { ChangeEvent, ReactNode, useTransition } from "react";
-import { usePathname, useRouter } from "../i18n/routing";
+import { usePathname, useRouter } from "@/i18n/routing";
 
 type Props = {
   children: ReactNode;

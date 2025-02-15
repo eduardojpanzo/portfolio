@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import { SectionContainer } from "../components/SectionContsiner";
-import { Title } from "../components/Title";
+import { SectionContainer } from "@/components/SectionContsiner";
+import { Title } from "@/components/Title";
 import { useTranslations } from "next-intl";
 import { Eye, Github } from "lucide-react";
 
