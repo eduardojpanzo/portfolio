@@ -5,7 +5,7 @@ import { Facebook, Github, Instagram, Linkedin } from "lucide-react";
 export const networkItems = [
   { href: "https://github.com/eduardojpanzo", Icon: Github },
   {
-    href: "https://www.linkedin.com/in/joãoeduardopanzo",
+    href: "https://www.linkedin.com/in/eduardojpanzo",
     Icon: Linkedin,
   },
   { href: "https://www.instagram.com/eduardojpanzo/", Icon: Instagram },

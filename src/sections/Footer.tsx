@@ -3,7 +3,7 @@ import { Menu } from "@/components/Menu";
 import { Networking } from "@/components/Networking";
 
 export function Footer() {
-  const f = useTranslations("Projects");
+  const f = useTranslations("Footer");
   const t = useTranslations("Menu");
   const menuLinks = [
     { path: "#about", value: `${t("about")}` },
