@@ -6,19 +6,19 @@ import { CopyButton } from "@/components/CopyButton";
 const contacts = [
   {
     title: "E-mail",
-    name: "joaoeduardopanzo",
+    name: "João Eduardo Panzo",
     link: "joaoeduardopanzo@gmail.com",
     isMail: true,
   },
   {
     title: "GitHub",
-    name: "EduardoPanzo",
+    name: "eduardojpanzo",
     link: "https://github.com/eduardojpanzo",
   },
   {
     title: "LinkedIn",
-    name: "joãoeduardopanzo",
-    link: "https://www.linkedin.com/in/joãoeduardopanzo/",
+    name: "João Eduardo Panzo",
+    link: "https://www.linkedin.com/in/eduardojpanzo/",
   },
 ];
 

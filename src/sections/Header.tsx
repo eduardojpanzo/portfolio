@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { Logo } from "@/components/Logo";
 import { Menu } from "@/components/Menu";
-import { SwitchTheme } from "@/components/SwitchTheme";
+// import { SwitchTheme } from "@/components/SwitchTheme";
 import SwitcherLang from "@/components/SwitcherLang";
 
 interface Props {
@@ -25,7 +25,7 @@ export function Header({ locale }: Props) {
           <Menu menuLinks={menuLinks} />
 
           <div className="flex items-center gap-3">
-            <SwitchTheme />
+            {/* <SwitchTheme /> */}
             <SwitcherLang />
           </div>
         </div>
