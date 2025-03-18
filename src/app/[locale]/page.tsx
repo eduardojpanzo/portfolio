@@ -1,7 +1,9 @@
 import { About } from "@/sections/About";
 import { Banner } from "@/sections/Banner";
 import { Contacts } from "@/sections/Contacts";
+import { Footer } from "@/sections/Footer";
 import { Formations } from "@/sections/Formations";
+import { Header } from "@/sections/Header";
 import { Projects } from "@/sections/Projects";
 import { Skills } from "@/sections/Skills";
 interface Props {
@@ -9,15 +11,18 @@ interface Props {
 }
 
 export default function Index({ params }: Props) {
-  console.log(params);
   return (
-    <div id="top">
-      <Banner />
-      <About />
-      <Skills />
-      <Formations />
-      <Projects />
-      <Contacts />
-    </div>
+    <>
+      <Header locale={params.locale} />
+      <div id="top">
+        <Banner />
+        <About />
+        <Skills />
+        <Formations />
+        <Projects />
+        <Contacts />
+      </div>
+      <Footer />
+    </>
   );
 }

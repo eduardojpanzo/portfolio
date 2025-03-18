@@ -6,8 +6,6 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { Providers } from "./providers";
 import { routing } from "@/i18n/routing";
 import localFont from "next/font/local";
-import { Footer } from "@/sections/Footer";
-import { Header } from "@/sections/Header";
 
 type Props = {
   children: ReactNode;
@@ -60,11 +58,7 @@ export default async function LocaleLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          <Providers>
-            <Header locale={locale} />
-            {children}
-            <Footer />
-          </Providers>
+          <Providers>{children}</Providers>
         </NextIntlClientProvider>
       </body>
     </html>
