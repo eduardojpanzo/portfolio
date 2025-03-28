@@ -25,7 +25,7 @@ export function FloatingHeader() {
   }, []);
 
   return (
-    <header className="border py-4">
+    <header className="md:col-span-2 py-4">
       <Container className="flex items-center justify-between">
         <motion.div
           initial={{ y: -100 }}
