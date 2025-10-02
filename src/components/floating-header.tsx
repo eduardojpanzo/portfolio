@@ -3,10 +3,19 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { Logo } from "./Logo";
+import { Logo } from "./logo";
 import clsx from "clsx";
 import NavGridLinks from "./nav-grid-links";
 import { Container } from "./container";
+import { SwitchTheme } from "./switch-theme";
+
+const MenuLinksData = [
+  { href: "/articles", label: "articles" },
+  { href: "/about", label: "about" },
+  { href: "/projects", label: "projects" },
+  { href: "/stack", label: "stack" },
+  { href: "/contact", label: "Contact" },
+];
 
 export function FloatingHeader() {
   const [isAtTop, setIsAtTop] = useState(true);
@@ -48,6 +57,10 @@ export function FloatingHeader() {
           <NavLinks />
         </nav>
 
+        <div>
+          <SwitchTheme />
+        </div>
+
         <motion.div
           // fixed top-0 z-50
           className={
@@ -72,18 +85,11 @@ function NavLinks({ mobile = false }: { mobile?: boolean }) {
 
   return (
     <>
-      <Link href="#features" className={linkClass}>
-        Features
-      </Link>
-      <Link href="#pricing" className={linkClass}>
-        Pricing
-      </Link>
-      <Link href="#about" className={linkClass}>
-        About
-      </Link>
-      <Link href="#contact" className={linkClass}>
-        Contact
-      </Link>
+      {MenuLinksData.map(({ href, label }) => (
+        <Link key={href} href={href} className={linkClass}>
+          {label}
+        </Link>
+      ))}
     </>
   );
 }

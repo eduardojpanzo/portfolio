@@ -1,8 +1,8 @@
 import { useTranslations } from "next-intl";
-import { Logo } from "@/components/Logo";
-import { Menu } from "@/components/Menu";
+import { Logo } from "@/components/logo";
+import { Menu } from "@/components/menu";
 // import { SwitchTheme } from "@/components/SwitchTheme";
-import SwitcherLang from "@/components/SwitcherLang";
+import { SwitcherLang } from "@/components/switcher-lang";
 
 interface Props {
   locale: string;

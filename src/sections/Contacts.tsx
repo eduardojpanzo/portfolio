@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
 import { SectionContainer } from "@/components/SectionContsiner";
 import { Title } from "@/components/Title";
-import { CopyButton } from "@/components/CopyButton";
+import { ClipboardButton } from "@/components/clipboard-button";
 
 const contacts = [
   {
@@ -44,7 +44,7 @@ export function Contacts() {
                 >
                   {name}
                 </a>
-                {isMail && <CopyButton textToCopy={link} />}
+                {isMail && <ClipboardButton textToCopy={link} />}
               </div>
             </li>
           ))}

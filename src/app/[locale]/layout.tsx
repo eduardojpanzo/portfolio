@@ -6,6 +6,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import { Providers } from "./providers";
 import { routing } from "@/i18n/routing";
 import localFont from "next/font/local";
+import { FloatingHeader } from "@/components/floating-header";
 
 type Props = {
   children: ReactNode;
@@ -42,15 +43,12 @@ export default async function LocaleLayout({
   children,
   params: { locale },
 }: Props) {
-  // Ensure that the incoming `locale` is valid
   if (!routing.locales.includes(locale as "en" | "pt")) {
     notFound();
   }
 
   setRequestLocale(locale);
 
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
   return (
     <html lang={locale} suppressHydrationWarning>
@@ -58,7 +56,10 @@ export default async function LocaleLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider messages={messages}>
-          <Providers>{children}</Providers>
+          <Providers>
+            <FloatingHeader />
+            {children}
+          </Providers>
         </NextIntlClientProvider>
       </body>
     </html>
