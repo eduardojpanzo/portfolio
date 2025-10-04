@@ -6,7 +6,7 @@ interface CopyButtonProps {
   textToCopy: string;
 }
 
-export function CopyButton({ textToCopy }: CopyButtonProps) {
+export function ClipboardButton({ textToCopy }: CopyButtonProps) {
   function handleCopy() {
     navigator.clipboard.writeText(textToCopy);
   }
